@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link href="style.css" rel=""stylesheet" type="text/css"/>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(212, 0, 255);
+    color: #0080ff;
+}
+
+h1 {
+    color:rgb(255, 0, 136);
+}
+
+/* Attribute Selector */
+a {
+    color: #b700ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(25, 0, 255);
+}
+
+/* Child Selector */
+ul > li {
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+h1 + p {
+    background-color:rgb(187, 255, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color:rgb(26, 179, 255);
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color:rgba(255, 98, 0, 0.42);
+}
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "🚀 ";
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: "🌌 ";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 200%;
+    color:rgb(0, 255, 42);
+}
+
+    </style>
+   </head>
+   <body>
+    <h1>
+        welcome to the space explorers club
+    </h1>
+    <ul>
+        <li>moon missions</li>
+        <li>mars rovers</li>
+        <li>international space station</li>
+        <li>teiscopes and stars</li>
+        <li>black holes mysteries</li>
+    </ul>
+    <p>space exploration has always captivated human imagination. It's a journey to the unknown</p>
+    <p>From the Moon to distant galaxies, we contunue to explore the vastness of space</p>
+    <a href="#">join our mission</a><br>
+    <a href="#">latest space news</a><br>
+    <a href="#">gallery of the universe</a>
+   </body>
+</html>
